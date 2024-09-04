@@ -7,6 +7,8 @@
 
 ## Creator UI
 <img src="images/Screenshot 2024-09-04 202649.png"></img>
+<img src="images/Screenshot 2024-09-04 205248.png"></img
+
 
 ## User UI
 <img src="images/Screenshot 2024-09-04 202739.png"></img>

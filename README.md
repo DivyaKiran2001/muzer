@@ -1,3 +1,33 @@
+
+## App UI
+
+
+
+# Muzerr
+
+## Creator UI
+![Project Logo](./images/logo.png)
+
+## User UI
+![Architecture Diagram](./images/architecture.png)
+
+## Prisma Studio
+
+
+
+
+## Docker Postgres Commands
+
+docker run -p 5432:5432 -e POSTGRES_PASSWORD=randompassword postgres
+
+## Prisma Commands
+
+npx prisma migrate dev
+
+npx prisma generate
+
+npx prisma studio
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

@@ -1,33 +1,23 @@
-import { getServerSession } from "next-auth";
-import { NextRequest, NextResponse } from "next/server";
-import { prismaClient } from "../lib/db";
+"use client"
+import { useSession } from 'next-auth/react'
 
+import StreamView from '@/app/components/StreamView'
+//import useRedirect from '@/app/hooks/useRedirect';
 
-export async function GET(req:NextRequest)
-{
-    const session = await getServerSession();
-
-    const user = await prismaClient.user.findFirst({
-        where: {
-            email: session?.user?.email ?? ""
+export default function Component() {
+    const session = useSession();
+    console.log(session);
+    // const redirect = useRedirect();
+    try {
+        if (!session.data?.user?.id) {
+            return (
+                <h1>Please Log in....</h1>
+            )
         }
-    });
-
-    if (!user) {
-        return NextResponse.json({
-            message: "Unauthenticated"
-        }, {
-            status: 403
-        })
+        return <StreamView creatorId={session.data.user?.id} playVideo={true} />
+    } catch(e) {
+        return null
     }
-
-    const streams = await prismaClient.stream.findMany({
-        where:{
-            userId: user.id
-        }
-    })
-
-    return NextResponse.json({
-        streams
-    }) 
 }
+
+export const dynamic = 'auto'

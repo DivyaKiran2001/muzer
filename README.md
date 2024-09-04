@@ -6,15 +6,17 @@
 # Muzerr
 
 ## Creator UI
-![Project Logo](./images/logo.png)
+<img src="images/Screenshot 2024-09-04 202649.png"></img>
 
 ## User UI
-![Architecture Diagram](./images/architecture.png)
+<img src="images/Screenshot 2024-09-04 202739.png"></img>
 
 ## Prisma Studio
 
+<img src="images/Screenshot 2024-09-04 203146.png"></img>
 
 
+<img src="images/Screenshot 2024-09-04 203238.png"></img>
 
 ## Docker Postgres Commands
 

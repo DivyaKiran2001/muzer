@@ -3,7 +3,7 @@
 
 
 
-# Muzerr
+# Muzerr - Using NextJs,Tailwind,Prisma and Postgres
 
 ## Creator UI
 <img src="images/Screenshot 2024-09-04 202649.png"></img>
